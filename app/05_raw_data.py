@@ -67,4 +67,5 @@ if __name__ == "__main__":
     # Create a local Snowpark session
     with Session.builder.getOrCreate() as session:
         load_all_raw_tables(session)
+        # comment out the validation for prod
         # validate_raw_tables(session)
